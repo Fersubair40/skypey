@@ -1,6 +1,5 @@
 import React from "react";
-import "./Empty.css";
-
+import './Empty.css';
 
 
 const Empty = ({ user }) => {
