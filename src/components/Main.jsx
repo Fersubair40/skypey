@@ -2,6 +2,7 @@ import React from "react";
 import "./Main.css";
 import Empty from '../components/Empty';
 import ChatWindow from '../components/ChatWindow';
+import MessageInput from "../containers/MessageInput";
 
 
 
@@ -10,10 +11,12 @@ const Main = ({ user, activeUserId }) => {
         if (!activeUserId) {
             return <Empty user={user} activeUserId={activeUserId} />;
         } else {
-            return <ChatWindow activeUserId={activeUserId} />
+            return <ChatWindow activeUserId={activeUserId } />
         }
     };
-    return <main className="Main"> {renderMainContent()} </main>
+    return   <main className="Main"> {renderMainContent()} 
+            {/* <MessageInput/> */}
+     </main>
 };
 
 

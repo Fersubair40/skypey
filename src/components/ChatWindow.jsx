@@ -4,6 +4,7 @@ import store from '../store'
 import Chats from './Chats';
 import _ from 'lodash';
 import './ChatWindow.css';
+import MessageInput from '../containers/MessageInput';
 
 
 
@@ -15,6 +16,7 @@ const ChatWindow = ({ activeUserId }) => {
         <div className='ChatWindow'>
             <Header user={activeUser} />
             <Chats messages={_.values(activeMsgs)} />
+            <MessageInput/>
         </div>
     );
 };
