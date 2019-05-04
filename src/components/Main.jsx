@@ -2,7 +2,7 @@ import React from "react";
 import "./Main.css";
 import Empty from '../components/Empty';
 import ChatWindow from '../components/ChatWindow';
-import MessageInput from "../containers/MessageInput";
+
 
 
 
@@ -14,9 +14,7 @@ const Main = ({ user, activeUserId }) => {
             return <ChatWindow activeUserId={activeUserId } />
         }
     };
-    return   <main className="Main"> {renderMainContent()} 
-            {/* <MessageInput/> */}
-     </main>
+    return   <main className="Main"> {renderMainContent()} </main>
 };
 
 
